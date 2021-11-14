@@ -1,0 +1,179 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+@font-face {
+    font-family: MyFont;
+    src: url('../fonts/NotoSansArabic-Thin-1.ttf');
+    font-weight: bold;
+  }
+:root{
+    --bg-rgba : rgba(253, 253, 253, 0.8) ;
+    /* hsla(hue, saturation, lightness, alpha) */
+    --bg-hsl-1 : hsla(
+        235, 20%, 50%, 1
+    );
+    
+    --bg-hsl-2 : hsla(
+        235, 30%, 50%, 1
+    );
+    
+    --bg-hsl-3 : hsla(
+        235, 40%, 50%, 1
+    );
+    
+    --bg-hsl-4 : hsla(
+        235, 50%, 50%, 1
+    );
+    
+    --bg-hsl-5 : hsla(
+        235, 60%, 50%, 1
+    );
+    --bg-hsl-6 : hsla(
+        235, 70%, 50%, 1
+    );
+    --bg-hsl-7 : hsla(
+        235, 80%, 50%, 1
+    );
+    --bg-hsl-8 : hsla(
+        235, 80%, 50%, 1
+    );
+    
+    --body-color : var(--bg-rgba);
+
+}
+body {
+    background-color: var(--body-color);
+}
+  main{
+      font-family: MyFont,  'Italiana', serif; ;
+  }
+  .title h1{
+      font-size-adjust: 100px;
+      font-style: oblique ;
+  }
+  #toggling:checked{
+    background-color: aliceblue;
+    border : 20px solid rebeccapurple;
+  }
+  .ballate{
+      width: 100%;
+      height: 100px;
+  }
+  .ballate_warpper_hsl  , .ballate_warpper_rgb{
+      width: inherit;
+      height: inherit;
+      display: flex ;
+
+  }
+  .card{
+      width: 100%;
+      height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      justify-items: center;
+  }
+  .card_warpper{
+      width: inherit;
+      height: inherit;
+      margin:auto ;
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+  }
+  .card_cover{
+      height: 66px;
+      width: 400px;
+      text-align: center;
+      margin:15px ;
+      padding: 0px;
+      border-radius: 20px;
+      box-shadow: 0.3px 1px 3px 0.4px gray;
+  }
+  ul {
+      list-style:  none;
+    margin : 0px ; 
+    padding : 0px ;
+    }
+    .ballate_warpper_hsl ul, .ballate_warpper_rgb ul{
+        width: inherit;
+        height: initial;
+        display: flex ;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+  .ballate_warpper_hsl ul li , .ballate_warpper_rgb ul li {
+    width: 140px;
+    height: inherit;
+  }
+  .ballate_warpper_hsl ul li:first-child{
+      background-color: var(--bg-hsl-1);
+  }
+  .ballate_warpper_hsl ul li:nth-child(2){
+      background-color: var(--bg-hsl-2);
+  }
+  .ballate_warpper_hsl ul li:nth-child(3){
+      background-color: var(--bg-hsl-3);
+  }
+  .ballate_warpper_hsl ul li:nth-child(4){
+      background-color: var(--bg-hsl-4);
+  }
+  .ballate_warpper_hsl ul li:nth-child(5){
+      background-color: var(--bg-hsl-5);
+  }
+  .ballate_warpper_hsl ul li:nth-child(6){
+      background-color: var(--bg-hsl-6);
+  }
+  .ballate_warpper_hsl ul li:nth-child(7){
+      background-color: var(--bg-hsl-7);
+  }
+  .ballate_warpper_hsl ul li:nth-child(8){
+      background-color: var(--bg-hsl-8);
+  }
+
+  .bg-color-controler{
+      min-width:40% ;
+      background-color: lawngreen;
+  }
+
+  .ballate_warpper_rgb ul li:nth-child(1){
+      background-color: var(--bg-hsl-8);
+  }
+  label{
+      display: block;
+  }
+ input{
+     
+     padding: 10px;
+     border: none;
+     border-radius: 20px;
+     background-color: bisque;
+ }
+ button{
+     cursor: pointer;
+     padding: 12px;
+     border: none;
+     border-radius: 50%;
+     background-color:cadetblue;
+ }
+  @media (any-pointer: coarse) {
+    :root{
+        --body-color : yellow
+      }
+  }
+  @media (prefers-color-scheme: light) {
+      :root{
+        --bg-rgba : rgb(85, 85, 85) ;
+      }
+  }
+/* text{
+    font-size: ;
+    font-family: ;
+    font-weight: ;
+    font-style: ;
+    font-variant: ;
+    font-display: ;
+    font-stretch: ;
+    font-size-adjust: ;
+} */

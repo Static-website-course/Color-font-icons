@@ -1,0 +1,12 @@
+.search:hover + path ,  .search:hover{
+    stroke: blanchedalmond;
+}
+
+.warring:hover {
+    fill: red;
+    stroke-width: 100;
+    transition: 0.5s ease;
+    transform-origin: center;
+    transform: rotateY(30deg);
+    box-shadow: 1px 1px 0.4px 0.4px gray;
+}
